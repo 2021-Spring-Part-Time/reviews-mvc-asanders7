@@ -1,0 +1,13 @@
+.container {
+background-color: #f5f5dc;
+border-radius: 8px;
+margin: auto;
+padding: 20px;
+width: 90%;
+}
+.main-title {
+color: #8a2be2;
+}
+.title {
+font-weight: bold;
+}

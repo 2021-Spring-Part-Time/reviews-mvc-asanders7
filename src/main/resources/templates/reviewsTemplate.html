@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css-file/style.css" th:href="@{/css-file/style.css}"
+          rel="stylesheet" />
+    <title>A List Of All Available Reviews</title>
+</head>
+<div class="container">
+<body>
+<header>
+    <h1 class="main-title">Virtual Reality Game Reviews</h1>
+</header>
+<main>
+    <ul>
+        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a></li>
+    </ul>
+</main>
+<footer>
+    <small>&copy alicia 2021</small>
+</footer>
+</body>
+</div>
+</html>
